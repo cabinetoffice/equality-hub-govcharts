@@ -1,0 +1,14 @@
+Package: govcharts
+Title: Standard Equality Hub Visualisation Helpers    
+Version: 0.0.0.9000
+Authors@R: 
+    person("Ben", "Vigreux", , "benjamin.vigreux@cabinetoffice.gov.uk", role = c("aut", "cre"))
+Description: Helper functions to quickly produce accessible standard Equality Hub charts - static and interactive.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Suggests: 
+Imports: 
+    plotly,
+    magrittr
