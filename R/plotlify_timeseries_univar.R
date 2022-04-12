@@ -1,11 +1,13 @@
-#' Turn a static single time-series chart into an interactive plotly object.
+#' Turn a static univariate time-series chart into an interactive plotly object.
 #'
 #' @param ggplot_input static ggplot chart with a single timeseries
 #'
 #' @return An interactive plotly chart.
 #' @export
+#' 
+#' @examples NULL
 
-plotlify_single_time_series <- function(ggplot_input) {
+plotlify_timeseries_univar <- function(ggplot_input) {
   plotly::ggplotly(ggplot_input, tooltip = "text") %>%
     plotly::config(
       displaylogo = FALSE,
@@ -21,5 +23,6 @@ plotlify_single_time_series <- function(ggplot_input) {
       yaxis = list(
         tickfont = list(
           size = 18.4))
-    )
+    ) %>% 
+    style(mode = "markers+lines")
 }
