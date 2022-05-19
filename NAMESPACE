@@ -2,6 +2,7 @@
 
 export(plotlify_barchart_horizontal)
 export(plotlify_choromap_univar)
+export(plotlify_scatter)
 export(plotlify_timeseries_multivar)
 export(plotlify_timeseries_univar)
 export(theme_gov)
