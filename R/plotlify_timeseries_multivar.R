@@ -8,15 +8,15 @@
 #' @examples NULL
 plotlify_timeseries_multivar <- function(ggplot_input) {
   
-  ggplotly(ggplot_input, tooltip = "text") %>% 
-    config(
+  plotly::ggplotly(ggplot_input, tooltip = "text") %>% 
+    plotly::config(
       displaylogo = FALSE, 
       modeBarButtonsToRemove = c("zoom2d", "zoomIn2d", "zoomOut2d", "pan2d",
                                  "select2d", "lasso2d", "autoScale2d"# , #"resetScale2d", 
                                  # "hoverClosestCartesian", "hoverCompareCartesian"
       )
     ) %>% 
-    layout(
+    plotly::layout(
       xaxis = list(
         tickfont = list(
           size = 18.4)),
@@ -37,6 +37,6 @@ plotlify_timeseries_multivar <- function(ggplot_input) {
       
       hovermode = "x"
     ) %>% 
-    style(mode = "markers+lines")
+    plotly::style(mode = "markers+lines")
   
 }

@@ -15,7 +15,7 @@ plotlify_timeseries_univar <- function(ggplot_input) {
                                  "select2d", "lasso2d", "autoScale2d", #"resetScale2d",
                                  "hoverClosestCartesian", "hoverCompareCartesian")
     ) %>%
-    layout(
+    plotly::layout(
       xaxis = list(
         tickfont = list(
           size = 18.4)),
@@ -24,5 +24,5 @@ plotlify_timeseries_univar <- function(ggplot_input) {
         tickfont = list(
           size = 18.4))
     ) %>% 
-    style(mode = "markers+lines")
+    plotly::style(mode = "markers+lines")
 }

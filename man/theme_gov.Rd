@@ -7,7 +7,7 @@
 theme_gov()
 }
 \description{
-To be used with most chart types other than horizontal bar charts and maps.
+To be used with vertical bar charts and line graphs.
 }
 \examples{
 NULL
