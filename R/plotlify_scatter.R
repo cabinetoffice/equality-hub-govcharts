@@ -19,11 +19,22 @@ plotlify_scatter <- function(ggplot_input) {
       font = list(family = 'arial'),
       
       xaxis = list(
+        
+        title = list(
+          font = list(
+            size = 18.4,
+            family = 'arial')),
+        
         tickfont = list(
           size = 18.4,
           family = 'arial')),
       
       yaxis = list(
+        title = list(
+          font = list(
+            size = 18.4,
+            family = 'arial')),
+        
         tickfont = list(
           size = 18.4,
           family = 'arial')),
