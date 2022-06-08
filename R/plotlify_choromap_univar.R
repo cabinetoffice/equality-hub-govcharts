@@ -21,7 +21,7 @@ plotlify_choromap_univar <- function(ggplot_input) {
                    yaxis = list(showline = FALSE,
                                 automargin = FALSE),
                    margin = list(t = 0, r = 0, b = 0, l = 0),
-                   font = list(family = "gdstransport",
+                   font = list(family = "arial",
                                size = 18.4),
                    dragmode = "pan")
 }

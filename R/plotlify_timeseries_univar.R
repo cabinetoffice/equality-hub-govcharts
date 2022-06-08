@@ -16,13 +16,17 @@ plotlify_timeseries_univar <- function(ggplot_input) {
                                  "hoverClosestCartesian", "hoverCompareCartesian")
     ) %>%
     plotly::layout(
+      font = list(family = 'arial'),
+      
       xaxis = list(
         tickfont = list(
-          size = 18.4)),
+          size = 18.4,
+          family = 'arial')),
 
       yaxis = list(
         tickfont = list(
-          size = 18.4))
+          size = 18.4,
+          family = 'arial'))
     ) %>% 
     plotly::style(mode = "markers+lines")
 }

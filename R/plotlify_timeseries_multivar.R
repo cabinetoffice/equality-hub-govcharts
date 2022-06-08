@@ -17,20 +17,25 @@ plotlify_timeseries_multivar <- function(ggplot_input) {
       )
     ) %>% 
     plotly::layout(
+      font = list(family = "arial"),
+      
       xaxis = list(
         tickfont = list(
-          size = 18.4)),
+          size = 18.4,
+          family = "arial")),
       
       yaxis = list(
         tickfont = list(
-          size = 18.4)),
+          size = 18.4,
+          family = "arial")),
       
       legend = list(
         title = list(
           text = ""
         ),
         font = list(
-          size = 18.4
+          size = 18.4,
+          family = "arial"
         ),
         orientation = "h"
       ),
