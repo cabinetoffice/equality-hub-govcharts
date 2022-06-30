@@ -13,7 +13,7 @@ plotlify_choromap_univar <- function(ggplot_input) {
       modeBarButtonsToRemove = c("zoom2d", "pan2d",
                                  "select2d", "lasso2d", "autoScale2d",
                                  "hoverClosestCartesian", "hoverCompareCartesian"),
-      scrollZoom = TRUE
+      scrollZoom = FALSE
     ) %>% 
     plotly::style(hoveron = "fill") %>% 
     plotly::layout(xaxis = list(showline = FALSE,
