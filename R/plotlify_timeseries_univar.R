@@ -19,14 +19,38 @@ plotlify_timeseries_univar <- function(ggplot_input) {
       font = list(family = 'arial'),
       
       xaxis = list(
+        
+        title = list(
+          standoff = 0,
+          font = list(
+            size = 1
+          )
+        ),
+        
         tickfont = list(
           size = 18.4,
           family = 'arial')),
 
       yaxis = list(
+        
+        title = list(
+          standoff = 0,
+          font = list(
+            size = 1
+          )
+        ),
+        
         tickfont = list(
           size = 18.4,
-          family = 'arial'))
+          family = 'arial')),
+      
+      margin = list(
+        l = 0, 
+        r = 0, 
+        t = 0, 
+        b = 0, 
+        pad = 4)
+      
     ) %>% 
     plotly::style(mode = "markers+lines")
 }

@@ -11,7 +11,7 @@ plotlify_scatter <- function(ggplot_input) {
       displaylogo = FALSE, 
       modeBarButtonsToRemove = c("zoom2d", "zoomIn2d", "zoomOut2d", "pan2d",
                                  "select2d", "lasso2d", "autoScale2d",
-                                 "resetScale2d", 
+                                 # "resetScale2d", 
                                  "hoverClosestCartesian", "hoverCompareCartesian"
       )
     ) %>% 
@@ -54,10 +54,11 @@ plotlify_scatter <- function(ggplot_input) {
       hovermode = "fill", 
       
       margin = list(
-        t = 25,
-        r = 15,
+        t = 0,
+        r = 0,
         b = 0,
-        l = 15
+        l = 0,
+        pad = 4
       )
     )
 }

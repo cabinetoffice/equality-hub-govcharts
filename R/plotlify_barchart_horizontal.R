@@ -12,7 +12,7 @@ plotlify_barchart_horizontal <- function(ggplot_input) {
       displaylogo = FALSE, 
       modeBarButtonsToRemove = c("zoom2d", "zoomIn2d", "zoomOut2d", "pan2d",
                                  "select2d", "lasso2d", "autoScale2d",
-                                 "resetScale2d", 
+                                 # "resetScale2d", 
                                  "hoverClosestCartesian", "hoverCompareCartesian"
       )
     ) %>% 
@@ -20,11 +20,27 @@ plotlify_barchart_horizontal <- function(ggplot_input) {
       font = list(family = 'arial'),
       
       xaxis = list(
+        
+        title = list(
+          standoff = 0,
+          font = list(
+            size = 1
+          )
+        ),
+        
         tickfont = list(
           size = 18.4,
           family = 'arial')),
       
       yaxis = list(
+        
+        title = list(
+          standoff = 0,
+          font = list(
+            size = 1
+          )
+        ),
+        
         tickfont = list(
           size = 18.4,
           family = 'arial')),
@@ -44,10 +60,11 @@ plotlify_barchart_horizontal <- function(ggplot_input) {
       hovermode = "fill", 
       
       margin = list(
-        t = 25,
-        r = 15,
+        t = 0,
+        r = 20,
         b = 0,
-        l = 15
+        l = 20,
+        pad = 4
       )
     )
 }

@@ -17,11 +17,27 @@ plotlify_choromap_univar <- function(ggplot_input) {
     ) %>% 
     plotly::style(hoveron = "fill") %>% 
     plotly::layout(xaxis = list(showline = FALSE,
-                                automargin = FALSE),
+                                automargin = FALSE,
+                                title = list(
+                                  standoff = 0,
+                                  font = list(
+                                    size = 1
+                                  ))),
                    yaxis = list(showline = FALSE,
-                                automargin = FALSE),
+                                automargin = FALSE, 
+                                title = list(
+                                  standoff = 0,
+                                  font = list(
+                                    size = 1
+                                  ))),
                    margin = list(t = 0, r = 0, b = 0, l = 0),
                    font = list(family = "arial",
                                size = 18.4),
+                   legend = list(
+                     font = list(
+                       family = "arial",
+                       size = 18.4
+                     )
+                   ),
                    dragmode = "pan")
 }

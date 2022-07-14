@@ -11,4 +11,5 @@ RoxygenNote: 7.1.2
 Imports: 
     plotly (>= 4.0.0),
     magrittr (>= 2.0.0),
-    ggplot2 (>= 3.0.0)
+    ggplot2 (>= 3.0.0),
+    sysfonts
